@@ -1,30 +1,12 @@
-html, 
-body, 
-#app {
-    height: 100%;
+* {
+    /* Fazer tipo um reset nos elementos pra que eles nao tenham nenhum espaçamento NATIVO. EX: p, h1 */
     margin: 0;
+    padding: 0;
+
+    /* Fazer com que o padding não aumente o tamanho da with de um elemento */
+    box-sizing: border-box;
 }
 
-#app {
-    display: flex;
-
-    /* Por padrão é sempre row */
-    /* Caso nao apareça ficará implicito a propriedade conforme abaixo */
-    flex-direction: row;
-
-    /* Se o flex-direction for row, align-items e justify-content serão 
-        VERTICAL, HORIZONTAL
-
-    Senao Se o flex-direction for column
-        HORIZONTAL, VERTICAL */
-
-    align-items: center;
-    justify-content: center;
-}
-
-.box {
-    width: 200px;
-    height: 60px; 
-    background: #f00;
-    margin: 5px;
+body {
+    
 }
