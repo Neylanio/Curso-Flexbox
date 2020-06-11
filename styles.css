@@ -11,6 +11,7 @@ body,
     /* Quebra a linha
     Por padrão ele nao quebra a linha e a propriedade tem valor de nowrap  */
     flex-wrap: wrap;
+    
 
     align-items: center; 
 
