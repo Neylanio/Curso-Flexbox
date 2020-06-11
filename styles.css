@@ -1,0 +1,30 @@
+html, 
+body, 
+#app {
+    height: 100%;
+    margin: 0;
+}
+
+#app {
+    display: flex;
+
+    /* Por padrão é sempre row */
+    /* Caso nao apareça ficará implicito a propriedade conforme abaixo */
+    flex-direction: row;
+
+    /* Se o flex-direction for row, align-items e justify-content serão 
+        VERTICAL, HORIZONTAL
+
+    Senao Se o flex-direction for column
+        HORIZONTAL, VERTICAL */
+
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 60px; 
+    background: #f00;
+    margin: 5px;
+}
