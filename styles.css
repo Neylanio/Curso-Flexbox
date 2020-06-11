@@ -12,6 +12,12 @@ body,
     Por padrão ele nao quebra a linha e a propriedade tem valor de nowrap  */
     flex-wrap: wrap;
 
+    align-items: center; 
+
+    /* Alinha os elementos quando eles estão em mais de uma linha quebrada */
+    /* E possui acesso as mesmas propriedades do justify-content */
+    align-content: center;
+
 
 }
 
