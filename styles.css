@@ -7,24 +7,25 @@ body,
 
 #app {
     display: flex;
-
-    /* Quebra a linha
-    Por padrão ele nao quebra a linha e a propriedade tem valor de nowrap  */
-    flex-wrap: wrap;
-
-    align-items: center; 
-
-    /* Alinha os elementos quando eles estão em mais de uma linha quebrada */
-    /* E possui acesso as mesmas propriedades do justify-content */
-    align-content: center;
-
-
 }
 
 .box {
-    width: 200px;
+    width: 150px;
     height: 60px; 
-    background: #f00;
     margin: 5px;
+}
 
+.red {
+    background: #f00;
+    order: 2;
+}
+
+.green {
+    background: #0f0;
+    order: 0;
+}
+
+.blue {
+    background: #00f;
+    order: 1;
 }
