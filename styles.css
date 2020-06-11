@@ -8,18 +8,6 @@ body,
 #app {
     display: flex;
 
-    /* Por padrão é sempre row */
-    /* Caso nao apareça ficará implicito a propriedade conforme abaixo */
-    flex-direction: row;
-
-    /* Se o flex-direction for row, align-items e justify-content serão 
-        VERTICAL, HORIZONTAL
-
-    Senao Se o flex-direction for column
-        HORIZONTAL, VERTICAL */
-
-    align-items: center;
-    justify-content: center;
 }
 
 .box {
@@ -27,4 +15,19 @@ body,
     height: 60px; 
     background: #f00;
     margin: 5px;
+
+    /* Elemento aceita ser aumentado para preencher totalmente a tela */
+    /* Por padrão ele é 0 */
+    flex-grow: 0;
+
+    /* Se o valor for 0, mantem o tamanho predefinido no elemento e não é mais flexivel */
+    /* Por padrão ele é 1 */
+    flex-shrink: 0;
+
+    /* Mistura do flex-grow e do flex-shrink */
+    /* flex: 1 0; */
+
+    /* Por padrão usa-se mais o flex: 1; */
+    /* flex: 1; */
+
 }
